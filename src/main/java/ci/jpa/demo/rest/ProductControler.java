@@ -21,7 +21,7 @@ public class ProductControler {
     @GetMapping("/products")
     public List<Product> geProducts() {
         List<Product> products = productRepository.findAll();
-        System.out.println("Produit trouvé : " + products);
+        System.out.println("Produits trouvés : " + products);
         return products;
     }
 
