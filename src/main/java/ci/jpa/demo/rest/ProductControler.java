@@ -24,6 +24,7 @@ public class ProductControler {
         System.out.println("Produit trouvé : " + products);
         return products;
     }
+    
 
     @GetMapping("/product/{id}")
     public Product getProduct(@PathVariable(name = "id") long id) {
